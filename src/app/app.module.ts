@@ -9,6 +9,7 @@ import { PaymentMethodsComponent } from './payment-methods/payment-methods.compo
 import { CartComponent } from './cart/cart.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductPageComponent } from './product-page/product-page.component';
+import { MasterComponent } from './master/master.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +20,14 @@ import { ProductPageComponent } from './product-page/product-page.component';
      PaymentMethodsComponent,
      CartComponent,
      ProductsListComponent,
-     ProductPageComponent
+     ProductPageComponent,
+     MasterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [MasterComponent]
 })
 export class AppModule { }

@@ -8,12 +8,12 @@ import { ProductsListComponent } from './products-list/products-list.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  { path: '', component:HomeComponent },
-  { path: 'productsList', component:ProductsListComponent },
-  { path: 'productPage', component:ProductPageComponent },
-  { path: 'register', component:RegisterComponent },
-  { path: 'login', component:LoginComponent },
-  { path: 'payment', component:PaymentMethodsComponent }
+  { path: "", component:HomeComponent },
+  { path: "productsList", component:ProductsListComponent },
+  { path: "productPage", component:ProductPageComponent },
+  { path: "register", component:RegisterComponent },
+  { path: "login", component:LoginComponent },
+  { path: "payment", component:PaymentMethodsComponent }
 ];
 
 @NgModule({
