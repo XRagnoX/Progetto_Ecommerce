@@ -1,0 +1,16 @@
+section{
+    background-color: rgb(235, 161, 112);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(235,161,112,1) 0%, rgba(255,191,158,1) 100%);
+
+    .hero-img{
+        max-width: 90%;
+        transform: rotate(-10deg);
+        outline: 3px solid rgb(245, 161, 112);
+        border: 10px solid white;
+        border-radius: 1em;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(235,161,112,1) 0%, rgba(255,191,158,1) 100%);
+        box-shadow: 5px 5px 5px rgb(155, 112, 72);
+
+    }
+    
+}
