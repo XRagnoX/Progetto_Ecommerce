@@ -2,3 +2,74 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,800;1,900&display=swap');
 
+
+
+
+  .gridProduct{
+    max-width: 1320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2em;
+  
+  }
+  
+  .containerProduct {
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 440px;
+  }
+  
+  .cardProduct {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    padding: .5em;
+  }
+  .cardImg{
+      background-color: rgb(238, 142, 142);
+      padding: .3em;
+  }
+  
+  
+  .cardImg img {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .cardProductBody {
+    padding: 5px;
+  }
+  .productName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .cardProductBody p {
+    color: #3d3d3d;
+    margin-bottom: 20px;
+    font-size: .8em;
+  }
+  
+  .viewProduct a {
+    padding: 10px 15px;
+    border: 1.5px solid #007bff;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+  }
+  
+
