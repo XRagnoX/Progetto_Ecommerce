@@ -15,22 +15,51 @@
   
   .containerProduct {
     width: 100%;
-    height: 80vh;
+    height:80vh;
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 440px;
+    height: 360px;
+           a{
+              text-decoration: none !important;
+              color: black
+
+            }
+
+            a:hover{
+              color: black;
+            }
+
+           
+        
   }
+    
+  
   
   .cardProduct {
     width: 300px;
     border-radius: 5px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     padding: .5em;
+
+     
   }
   .cardImg{
+      position: relative;
       background-color: rgb(238, 142, 142);
       padding: .3em;
+
+      .wish{
+        position: absolute;
+        top: .5em;
+        right: .5em;
+        outline: 0;
+        border-radius: 50%;
+        color: red;
+        background-color: white;
+        border: 1px solid rgba(20, 20, 20,0.5);
+        z-index: 10;
+      }
   }
   
   
@@ -43,10 +72,14 @@
     padding: 5px;
   }
   .productName {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 5px;
+    justify-items: flex-start;
+
+        .details{
+          justify-self: end;
+        }
   }
   
   .cardProductBody p {
@@ -54,22 +87,43 @@
     margin-bottom: 20px;
     font-size: .8em;
   }
-  
-  .viewProduct a {
-    padding: 10px 15px;
-    border: 1.5px solid #007bff;
-    border-radius: 3px;
-    text-decoration: none;
-    color: #007bff;
-  }
+
+ 
+
   
   .buttons {
     display: flex;
     justify-content: space-between;
   }
+
+  .buttons button{
+    border: 0;
+  }
   
-  .buttons a {
-    text-decoration: none;
+
+  .description{
+    max-height: 0;
+    opacity: 0;
+   transition: .2s;
+  }
+
+  
+  .containerProduct:hover .description{
+    max-height: 300px;
+    z-index: 2;
+    opacity: 1;
+    transition: .7s;
+    
+  }
+
+  .containerProduct:nth-child(even) .cardImg{
+    background-color: rgb(138, 170, 231);
+
+  }
+
+  .containerProduct:nth-child(odd) .cardImg{
+    background-color: rgb(238, 142, 142);
+
   }
   
 
