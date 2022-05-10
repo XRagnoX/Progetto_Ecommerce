@@ -10,6 +10,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2em;
+
+    
   
   }
   
@@ -71,14 +73,28 @@
   .cardProductBody {
     padding: 5px;
   }
+
   .productName {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 5px;
     justify-items: flex-start;
+    grid-template-areas: 
+    "prodName prodName"
+    "price butDetails";
+
+        h5{
+          grid-area: prodName;
+        }
+
+        h6{
+          grid-area: price;
+          margin-top: 1em;
+        }
 
         .details{
           justify-self: end;
+          grid-area: butDetails;
         }
   }
   
@@ -125,5 +141,26 @@
     background-color: rgb(238, 142, 142);
 
   }
-  
+
+  @media screen and (max-width:1400px){
+    .gridProduct{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width:1024px){
+    .gridProduct{
+      grid-template-columns: 1fr 1fr;
+    }
+  }  
+
+  @media screen and (max-width:768px){
+    .gridProduct{
+      grid-template-columns: 1fr ;
+    }
+
+    .cardProduct{
+      width: 350px;
+    }
+  }  
 
