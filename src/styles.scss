@@ -9,9 +9,7 @@
     max-width: 1320px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2em;
-
-    
+    grid-gap: 2em;  
   
   }
   
@@ -50,6 +48,7 @@
       position: relative;
       background-color: rgb(238, 142, 142);
       padding: .3em;
+      overflow: hidden;
 
       .wish{
         position: absolute;
@@ -61,6 +60,22 @@
         background-color: white;
         border: 1px solid rgba(20, 20, 20,0.5);
         z-index: 10;
+      }
+
+      .discountBadge{
+        position: absolute;
+        top: 0;
+        left: -15%;
+        width: 53%;
+        background-color: rgb(0, 158, 71);
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        transform: rotate(-45deg);
+        text-align: center;
+        padding: .5em;
+        font-size: 1.3em;
+        color: white;
+
       }
   }
   
@@ -161,6 +176,10 @@
 
     .cardProduct{
       width: 350px;
+    }
+
+    .cardImg .discountBadge{
+      left: -18%;
     }
   }  
 
