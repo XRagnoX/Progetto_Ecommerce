@@ -1,0 +1,39 @@
+.gridSpec{
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+                .prewiev{
+                    margin-bottom: 1em;
+                    width: 80px;
+                    height: 80px;
+                    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+                    border-radius: 5px;
+
+                        img{
+                            max-width: 100%;
+                            filter: grayscale(70%);
+                        }
+                }
+
+                .prewiev:hover img{
+                    filter: grayscale(0);
+                    transition: .5s;
+                }
+        }
+
+        .realWiev{
+            
+            img{
+                max-width: 100%;
+            }
+        }
+}
+
+.buyButton{
+    background-color: rgb(235, 161, 112) ;
+}
