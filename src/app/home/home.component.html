@@ -1,10 +1,10 @@
 <div class="heroBanner">
     <div class="row">
         <div class="col-5 align-self-center">
-             <h1 class="display-4 ms-5 mt-5 text-white">Lo store di scarpe più grande in Italia </h1>
+            <h1 class="display-4 ms-5 mt-5 text-white">Lo store di scarpe più grande in Italia </h1>
 
-             <p class="lead ms-5 text-white">Cerca tra i migliori marchi la tua calzatura prefertita! </p>
-            
+            <p class="lead ms-5 text-white">Cerca tra i migliori marchi la tua calzatura prefertita! </p>
+
         </div>
 
         <div class="col-7 align-self-center mb-5 ">
@@ -18,15 +18,840 @@
 
 <section class=" container my-5 p-0">
 
-       <div class="gridWrap">
+    <div class="gridWrap">
         <div class="boxType1"><img class="boxImg" src="assets/img/woman-run.png" alt="">
-            <a routerLink="/"><span class="hoverType">Running</span></a></div>
+            <a routerLink="/"><span class="hoverType">Running</span></a>
+        </div>
         <div class="boxType2"><img class="boxImg" src="assets/img/man-skate.png" alt="">
-            <a routerLink="/"><span class="hoverType">Outdoor</span></a></div>
+            <a routerLink="/"><span class="hoverType">Outdoor</span></a>
+        </div>
         <div class="boxType3"><img class="boxImg" src="assets/img/man-classic.png" alt="">
-            <a routerLink="/"><span class="hoverType">Classic</span></a></div>
+            <a routerLink="/"><span class="hoverType">Classic</span></a>
+        </div>
         <div class="boxType4"><img class="boxImg" src="assets/img/cinese-calcio.png" alt="">
-            <a routerLink="/"><span class="hoverType">Soccer</span></a></div>
+            <a routerLink="/"><span class="hoverType">Soccer</span></a>
+        </div>
     </div>
+
+
+    <h2 class="display-4 text-center my-5 text-dark">Most Seller</h2>
+
+
+
+   
+    <div class="gridProduct">
+                 <!-- PRODOTTO SINGOLO-->
+        <div class="containerProduct">
+
+            <div class="cardProduct">
+                <div class="cardImg">
+                    <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></button>
+
+                    <img src="assets/img/air-jordan.png" alt="" />
+                </div>
+                <div class="cardProductbody">
+                    <div class="productName">
+                        <h5>Air Jordan</h5>
+                        <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+                        <h6>132.99 &#8364;</h6>
+                    </div>
+                    <div class="description">
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+                        </p>
+                        <div class="buttons">
+                            <div>
+                                <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                                        class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg></button>
+                            </div>
+                            <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                                    class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Description Disappear-->
+                </div>
+            </div>
+
+        </div>
+        <!--PRODOTTO SINGOLO-->
+
+        <div class="containerProduct">
+
+            <div class="cardProduct">
+                <div class="cardImg">
+                    <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></button>
+
+                    <img src="assets/img/adidas-alpha.png" alt="" />
+                </div>
+                <div class="cardProductbody">
+                    <div class="productName">
+                        <h5>Adidas Alpha</h5>
+                        <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+                        <h6>130,00 &#8364;</h6>
+                    </div>
+                    <div class="description">
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+                        </p>
+                        <div class="buttons">
+                            <div>
+                                <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                                        class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg></button>
+                            </div>
+                            <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                                    class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Description Disappear-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="containerProduct">
+
+            <div class="cardProduct">
+                <div class="cardImg">
+                    <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></button>
+
+                    <img src="assets/img/vans-sneakers.png" alt="" />
+                </div>
+                <div class="cardProductbody">
+                    <div class="productName">
+                        <h5>Vans Sneaker</h5>
+                        <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+                        <h6>85,00 &#8364;</h6>
+                    </div>
+                    <div class="description">
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+                        </p>
+                        <div class="buttons">
+                            <div>
+                                <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                                        class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg></button>
+                            </div>
+                            <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                                    class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Description Disappear-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="containerProduct">
+
+            <div class="cardProduct">
+                <div class="cardImg">
+                    <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></button>
+
+                    <img src="assets/img/puma-sneakers.png" alt="" />
+                </div>
+                <div class="cardProductbody">
+                    <div class="productName">
+                        <h5>Puma Sneaker</h5>
+                        <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+                        <h6>69,99 &#8364;</h6>
+                    </div>
+                    <div class="description">
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+                        </p>
+                        <div class="buttons">
+                            <div>
+                                <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                                        class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg></button>
+                            </div>
+                            <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                                    class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Description Disappear-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="containerProduct">
+
+            <div class="cardProduct">
+                <div class="cardImg">
+                    <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></button>
+
+                    <img src="assets/img/vans-sneakers.png" alt="" />
+                </div>
+                <div class="cardProductbody">
+                    <div class="productName">
+                        <h5>Vans Sneaker</h5>
+                        <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+                        <h6>74,99 &#8364;</h6>
+                    </div>
+                    <div class="description">
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+                        </p>
+                        <div class="buttons">
+                            <div>
+                                <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                                        class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg></button>
+                            </div>
+                            <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                                    class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Description Disappear-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="containerProduct">
+
+            <div class="cardProduct">
+                <div class="cardImg">
+                    <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></button>
+
+                    <img src="assets/img/puma-sneakers.png" alt="" />
+                </div>
+                <div class="cardProductbody">
+                    <div class="productName">
+                        <h5>Puma Sneaker</h5>
+                        <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+                        <h6>69,00 &#8364;</h6>
+                    </div>
+                    <div class="description">
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+                        </p>
+                        <div class="buttons">
+                            <div>
+                                <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                                        class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg></button>
+                            </div>
+                            <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                                    class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Description Disappear-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="containerProduct">
+
+            <div class="cardProduct">
+                <div class="cardImg">
+                    <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></button>
+
+                    <img src="assets/img/adidas-alpha.png" alt="" />
+                </div>
+                <div class="cardProductbody">
+                    <div class="productName">
+                        <h5>Adidas Alpha</h5>
+                        <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+                        <h6>120,00 &#8364;</h6>
+                    </div>
+                    <div class="description">
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+                        </p>
+                        <div class="buttons">
+                            <div>
+                                <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                                        class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg></button>
+                            </div>
+                            <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                                    class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Description Disappear-->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="containerProduct">
+
+            <div class="cardProduct">
+                <div class="cardImg">
+                    <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></button>
+
+                    <img src="assets/img/air-jordan.png" alt="" />
+                </div>
+                <div class="cardProductbody">
+                    <div class="productName">
+                        <h5>Air Jordan</h5>
+                        <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+                        <h6>129,99 &#8364;</h6>
+                    </div>
+                    <div class="description">
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+                        </p>
+                        <div class="buttons">
+                            <div>
+                                <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                                        class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg></button>
+                            </div>
+                            <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                                    class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg></button>
+                        </div>
+                    </div>
+                    <!-- Description Disappear-->
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    <!--FINE GRID PRODOTTI-->
+
+
+
+    <!---------GRID PRODOTTI DISCOUNT CARD EQUIVALENTI CON AGGIUNTA DI UN BADGE--------------------------->
+
+    <h2 class="display-4 text-center my-5 text-dark">Top Discount del giorno</h2>
+
+    <img class="bannerOffer" src="assets/img/banner.jpg" alt="">
+
+    <div class="gridProduct">
+        <!-- PRODOTTO SINGOLO-->
+<div class="containerProduct  ">
+
+   <div class="cardProduct">
+       <div class="cardImg">
+           <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                   height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                   <path
+                       d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+               </svg></button>
+
+               <div class="discountBadge">-30%</div>
+
+           <img src="assets/img/air-jordan.png" alt="" />
+       </div>
+       <div class="cardProductbody">
+           <div class="productName">
+               <h5>Air Jordan</h5>
+               <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+               <h6>132.99 &#8364;</h6>
+           </div>
+           <div class="description">
+               <hr>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+               </p>
+               <div class="buttons">
+                   <div>
+                       <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                               class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                               <path
+                                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                           </svg></button>
+                   </div>
+                   <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                           class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                           fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                           <path
+                               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                       </svg></button>
+               </div>
+           </div>
+           <!-- Description Disappear-->
+       </div>
+   </div>
+
+</div>
+<!--PRODOTTO SINGOLO-->
+
+<div class="containerProduct">
+
+   <div class="cardProduct">
+       <div class="cardImg">
+           <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                   height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                   <path
+                       d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+               </svg></button>
+               <div class="discountBadge">-20%</div>
+
+           <img src="assets/img/adidas-alpha.png" alt="" />
+       </div>
+       <div class="cardProductbody">
+           <div class="productName">
+               <h5>Adidas Alpha</h5>
+               <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+               <h6>130,00 &#8364;</h6>
+           </div>
+           <div class="description">
+               <hr>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+               </p>
+               <div class="buttons">
+                   <div>
+                       <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                               class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                               <path
+                                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                           </svg></button>
+                   </div>
+                   <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                           class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                           fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                           <path
+                               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                       </svg></button>
+               </div>
+           </div>
+           <!-- Description Disappear-->
+       </div>
+   </div>
+
+</div>
+
+<div class="containerProduct">
+
+   <div class="cardProduct">
+       <div class="cardImg">
+           <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                   height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                   <path
+                       d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+               </svg></button>
+               <div class="discountBadge">-15%</div>
+
+           <img src="assets/img/vans-sneakers.png" alt="" />
+       </div>
+       <div class="cardProductbody">
+           <div class="productName">
+               <h5>Vans Sneaker</h5>
+               <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+               <h6>85,00 &#8364;</h6>
+           </div>
+           <div class="description">
+               <hr>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+               </p>
+               <div class="buttons">
+                   <div>
+                       <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                               class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                               <path
+                                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                           </svg></button>
+                   </div>
+                   <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                           class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                           fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                           <path
+                               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                       </svg></button>
+               </div>
+           </div>
+           <!-- Description Disappear-->
+       </div>
+   </div>
+
+</div>
+
+<div class="containerProduct">
+
+   <div class="cardProduct">
+       <div class="cardImg">
+           <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                   height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                   <path
+                       d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+               </svg></button>
+               <div class="discountBadge">-40%</div>
+
+           <img src="assets/img/puma-sneakers.png" alt="" />
+       </div>
+       <div class="cardProductbody">
+           <div class="productName">
+               <h5>Puma Sneaker</h5>
+               <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+               <h6>69,99 &#8364;</h6>
+           </div>
+           <div class="description">
+               <hr>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+               </p>
+               <div class="buttons">
+                   <div>
+                       <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                               class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                               <path
+                                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                           </svg></button>
+                   </div>
+                   <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                           class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                           fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                           <path
+                               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                       </svg></button>
+               </div>
+           </div>
+           <!-- Description Disappear-->
+       </div>
+   </div>
+
+</div>
+
+<div class="containerProduct">
+
+   <div class="cardProduct">
+       <div class="cardImg">
+           <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                   height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                   <path
+                       d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+               </svg></button>
+               <div class="discountBadge">-5%</div>
+
+           <img src="assets/img/vans-sneakers.png" alt="" />
+       </div>
+       <div class="cardProductbody">
+           <div class="productName">
+               <h5>Vans Sneaker</h5>
+               <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+               <h6>74,99 &#8364;</h6>
+           </div>
+           <div class="description">
+               <hr>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+               </p>
+               <div class="buttons">
+                   <div>
+                       <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                               class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                               <path
+                                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                           </svg></button>
+                   </div>
+                   <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                           class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                           fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                           <path
+                               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                       </svg></button>
+               </div>
+           </div>
+           <!-- Description Disappear-->
+       </div>
+   </div>
+
+</div>
+
+<div class="containerProduct">
+
+   <div class="cardProduct">
+       <div class="cardImg">
+           <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                   height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                   <path
+                       d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+               </svg></button>
+               <div class="discountBadge">-50%</div>
+
+           <img src="assets/img/puma-sneakers.png" alt="" />
+       </div>
+       <div class="cardProductbody">
+           <div class="productName">
+               <h5>Puma Sneaker</h5>
+               <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+               <h6>69,00 &#8364;</h6>
+           </div>
+           <div class="description">
+               <hr>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+               </p>
+               <div class="buttons">
+                   <div>
+                       <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                               class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                               <path
+                                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                           </svg></button>
+                   </div>
+                   <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                           class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                           fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                           <path
+                               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                       </svg></button>
+               </div>
+           </div>
+           <!-- Description Disappear-->
+       </div>
+   </div>
+
+</div>
+
+<div class="containerProduct">
+
+   <div class="cardProduct">
+       <div class="cardImg">
+           <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                   height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                   <path
+                       d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+               </svg></button>
+               <div class="discountBadge">-10%</div>
+
+           <img src="assets/img/adidas-alpha.png" alt="" />
+       </div>
+       <div class="cardProductbody">
+           <div class="productName">
+               <h5>Adidas Alpha</h5>
+               <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+               <h6>120,00 &#8364;</h6>
+           </div>
+           <div class="description">
+               <hr>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+               </p>
+               <div class="buttons">
+                   <div>
+                       <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                               class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                               <path
+                                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                           </svg></button>
+                   </div>
+                   <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                           class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                           fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                           <path
+                               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                       </svg></button>
+               </div>
+           </div>
+           <!-- Description Disappear-->
+       </div>
+   </div>
+
+</div>
+
+<div class="containerProduct">
+
+   <div class="cardProduct">
+       <div class="cardImg">
+           <button class="wish" (click)="addToWishList()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                   height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                   <path
+                       d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+               </svg></button>
+               <div class="discountBadge">-20%</div>
+
+           <img src="assets/img/air-jordan.png" alt="" />
+       </div>
+       <div class="cardProductbody">
+           <div class="productName">
+               <h5>Air Jordan</h5>
+               <button routerLink="/productPage" class=" details btn btn-outline-primary">Dettaglio</button>
+               <h6>129,99 &#8364;</h6>
+           </div>
+           <div class="description">
+               <hr>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,dignissimos.
+               </p>
+               <div class="buttons">
+                   <div>
+                       <button (click)="addToCart()" class="btn-sm btn-success text-white">Compra ora <svg
+                               class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                               fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                               <path
+                                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                           </svg></button>
+                   </div>
+                   <button (click)="removeFromCart()" class="btn-sm btn-danger text-white">Rimuovi <svg
+                           class="text dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                           fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                           <path
+                               d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                       </svg></button>
+               </div>
+           </div>
+           <!-- Description Disappear-->
+       </div>
+   </div>
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+<h2 class="display-6 text-center my-5 text-dark">Cerca tra i tuoi  marchi preferiti. </h2>
+
+
+<div class="gridProduct">
+    <div class="brandBox">
+        <a href="/productsList">
+        <img src="assets/img/adidas.png" alt="">
+    </a>
+    </div>
+    <div class="brandBox">
+        <a href="/productsList">
+        <img src="assets/img/nike.png" alt="">
+    </a>
+    </div>
+    <div class="brandBox">
+        <a href="/productsList">
+        <img src="assets/img/puma.png" alt="">
+    </a>
+    </div>
+    <div class="brandBox">
+        <a href="/productsList">
+        <img src="assets/img/fila.png" alt="">
+    </a>
+    </div>
+
+    <div class="brandBox">
+        <a href="/productsList">
+        <img src="assets/img/hilfiger.png" alt="">
+    </a>
+    </div>
+    <div class="brandBox">
+        <a href="/productsList">
+        <img src="assets/img/new-balance.png" alt="">
+    </a>
+    </div>
+    <div class="brandBox">
+        <a href="/productsList">
+        <img src="assets/img/hermes.png" alt="">
+    </a>
+    </div>
+    <div class="brandBox">
+        <a href="/productsList">
+        <img src="assets/img/brooks.png" alt="">
+    </a>
+    </div>
+</div>
+
+
+
+
+
+
 
 </section>

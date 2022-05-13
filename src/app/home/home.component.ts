@@ -12,4 +12,16 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addToWishList(){
+    console.log("Aggiunto alla WishList!")
+  }
+
+  addToCart(){
+    console.log("Aggiunto al Carrello")
+  }
+
+  removeFromCart(){
+    console.log("Rimosso dal Carrello")
+  }
+
 }
