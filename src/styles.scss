@@ -2,9 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,800;1,900&display=swap');
 
-
+$pink: pink;
  
-
+  .pink{
+    color: $pink;
+  }
   .gridProduct{
     max-width: 1320px;
     display: grid;
@@ -36,6 +38,8 @@
            
         
   }
+
+  
 
   .brandBox{
     width: 300px;
@@ -177,6 +181,7 @@
     background-color: rgb(238, 142, 142);
 
   }
+
 
   @media screen and (max-width:1400px){
     .gridProduct{

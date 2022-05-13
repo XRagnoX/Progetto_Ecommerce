@@ -12,6 +12,7 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { MasterComponent } from './master/master.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
      CartComponent,
      ProductsListComponent,
      ProductPageComponent,
-     MasterComponent
+     MasterComponent,
+     PasswordRecoveryComponent
   ],
   imports: [
     BrowserModule,
