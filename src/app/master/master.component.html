@@ -177,8 +177,8 @@
 
 
           <input type="text" id="mail" name="mail" class="form-control" formControlName="mail" placeholder="La tu Email"
-            [ngClass]="{'is-invalid': subscribeForm.controls['mail'].errors!== null && subscribeForm.controls['mail'].touched}"
-            [ngClass]="{'is-valid': subscribeForm.controls['mail'].errors== null && subscribeForm.controls['mail'].touched}">
+            [ngClass]="{'is-invalid': subscribeForm.controls['mail'].errors!== null && subscribeForm.controls['mail'].touched, 
+            'is-valid': subscribeForm.controls['mail'].errors== null && subscribeForm.controls['mail'].touched}">
 
           <button>Sottoscrivi</button>
 
