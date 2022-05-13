@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2em;  
+    justify-content: space-between;
   
   }
   
@@ -31,7 +32,26 @@
             }
 
            
+
+           
         
+  }
+
+  .brandBox{
+    width: 300px;
+    height: 160px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+
+      img{
+        max-width: 100%;
+        filter:grayscale(100%)
+      }
+
+      a:hover img{
+        filter: grayscale(0);
+        transition: .5s;
+      }
   }
     
   
@@ -49,6 +69,7 @@
       background-color: rgb(238, 142, 142);
       padding: .3em;
       overflow: hidden;
+      border-radius: 5px;
 
       .wish{
         position: absolute;
@@ -166,6 +187,7 @@
   @media screen and (max-width:1024px){
     .gridProduct{
       grid-template-columns: 1fr 1fr;
+      
     }
   }  
 

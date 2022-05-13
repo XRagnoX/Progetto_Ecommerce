@@ -7,3 +7,206 @@
     height: 1.3em !important;
     background-position: center;
 }
+
+.gridFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 5px;
+    justify-content: space-between;
+    grid-template-areas: "contatti primalista secondalista news";
+   
+    
+        ul:nth-child(2),ul:nth-child(3),ul:nth-child(4){
+            align-self: center;
+            margin: 0 auto;
+
+            li a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    
+    
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin: 0 auto;
+            align-self: center;
+            grid-area: contatti;
+
+            li:nth-child(1)  {
+                text-align: center;
+                
+
+                img{
+                    max-width: 150px;
+                    border-radius: 1em;
+                }
+                p{
+                    color: rgb(235, 161, 112);
+                }
+            }
+           
+            li{
+
+                    h5,h6,svg{
+                        color: rgb(235, 161, 112);
+                    }
+
+                    p{
+                        a{
+                            color: white;
+                            text-decoration: none;
+
+                        }
+                        
+                    }
+
+                    form{
+
+                            button{
+                                outline: 0;
+                                padding: .5em;
+                                background-color: rgb(235, 161, 112) ;
+                                color: white;
+                                border-radius: .5em;
+                                margin-top: .5em;
+                            }
+                    }
+
+                  
+            }
+        }
+        ul:nth-child(2){
+            grid-area: primalista;
+        }
+        ul:nth-child(3){
+            grid-area: secondalista;
+        }
+        ul:nth-child(4){
+            grid-area: news;
+        }
+
+
+        
+
+
+  
+
+    
+}
+
+.socialFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "social . copyr";
+    
+   
+
+        .social{
+            display: flex;
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            padding: 1em;
+            grid-area: social;
+              
+
+                li{
+
+                    
+                    a{
+                        text-decoration: none;
+                        display: inline-block;
+                        color: rgb(235, 161, 112);
+                        width: 45px;
+                        height: 40px;
+                        border-radius: 50%;
+                        margin-right: .5em;
+                    }
+
+                   
+                }
+
+
+        }
+
+        
+        .copyright{
+            grid-area: copyr;
+            align-self: center;
+            p{
+                color: white;
+            }
+        }
+
+        
+
+}
+
+@media screen and (max-width:992px){
+    .gridFooter{
+       
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;  
+      grid-template-areas: 
+      "contatti primalista secondalista"
+      "news news news"  ;
+
+        ul:nth-child(4){
+        width: 70%;
+        text-align: center;
+        margin-top: 3em;
+        margin: 0 auto;
+        }
+    
+    }
+
+    .socialFooter{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "social copyr";
+    }
+     
+}
+
+    @media screen and (max-width:768px){
+        .gridFooter{
+           
+          grid-template-columns: 1fr 1fr ;
+          
+          grid-template-areas: 
+            "contatti contatti"
+            "news news"
+            "primalista secondalista" 
+              ;
+
+
+            ul:nth-child(1){
+                margin-bottom: 1em;
+    
+        
+            }
+            ul:nth-child(4){
+                margin-bottom: 3em;
+                width: 100%;
+                
+            }
+         
+        }
+
+        .socialFooter{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "social"
+            "copyr";
+
+            .copyright{
+                text-align: center;
+            }
+        }
+    }
+
+   
