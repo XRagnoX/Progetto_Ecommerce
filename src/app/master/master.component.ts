@@ -11,7 +11,7 @@ export class MasterComponent implements OnInit {
   regexMail= /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
   subscribeForm = new FormGroup({
-    mail: new FormControl('',[Validators.required,Validators.pattern(this.regexMail)]),
+    mail: new FormControl('',[Validators.minLength(1),Validators.required,Validators.pattern(this.regexMail)]),
   })
   
 
