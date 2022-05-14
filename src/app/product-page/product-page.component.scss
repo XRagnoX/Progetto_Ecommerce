@@ -8,11 +8,12 @@
             padding: 0;
 
                 .prewiev{
-                    margin-bottom: 1em;
+                    margin-bottom: 2em;
                     width: 80px;
                     height: 80px;
                     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
                     border-radius: 5px;
+                    
 
                         img{
                             max-width: 100%;
@@ -36,4 +37,68 @@
 
 .buyButton{
     background-color: rgb(235, 161, 112) ;
+}
+.colors{
+    margin-bottom: 1em;
+
+    ul{
+        list-style:none; 
+        padding:0; 
+        margin: 0;
+
+        li{
+            margin: 0 20px 0 0;
+            display: inline-block;
+
+            label{
+                cursor: pointer;
+
+                input{
+                    display:none;
+                }
+
+                .swatch{
+                    display:inline-block;
+                    height: 30px;
+                    width:30px;
+                    margin: 0 5px 0 0 ;
+                    border-radius: 50%;
+                    border: 1px solid #d4d4d4;
+                }
+            }
+            
+        }
+    }
+} 
+
+
+
+.colors input[type="radio"]:checked + .swatch{
+    box-shadow: inset 0 0 0 2px white;
+}
+
+
+
+.social{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: .7em;
+        li{
+             
+            svg{
+                color: rgb(235, 161, 112);
+                
+            }
+        }
+}
+
+.accordionLink{
+    text-decoration: none;
+
+}
+
+.accordionLink:hover{
+    color: rgb(235, 161, 112);
 }

@@ -8,6 +8,12 @@
     background-position: center;
 }
 
+.footer{
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    background-color: rgb(70, 70, 70);
+}
+
 .gridFooter{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -67,6 +73,7 @@
 
                             button{
                                 outline: 0;
+                                border: 0;
                                 padding: .5em;
                                 background-color: rgb(235, 161, 112) ;
                                 color: white;
@@ -108,7 +115,7 @@
             grid-area: social;
             margin: 0 auto;
             padding: 0;
-            padding: 1em;
+            padding: .5em;
             color: white;
             h4{
                 text-align: center;
