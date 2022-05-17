@@ -8,6 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class PasswordRecoveryComponent implements OnInit {
 
+  pswSent:boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -18,5 +20,11 @@ export class PasswordRecoveryComponent implements OnInit {
     password: new FormControl('',[Validators.required, Validators.minLength(8)])
   })
   
-  subscribe(){}
+
+
+  subscribe(){
+    this.pswSent = false;
+    console.log(this.pswSent);
+  }
+
 }

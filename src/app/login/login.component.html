@@ -1,4 +1,4 @@
-<div class="login-box">
+<div class="form-box">
     <form class="" [formGroup]="subscribeForm" (ngSubmit)="subscribe()" name="subscribeForm" method="POST">
         <input type="text" id="mail" name="mail" class="form-control" formControlName="mail" placeholder="La tua Email"
         [ngClass]="{'is-invalid': subscribeForm.controls['mail'].errors!== null && subscribeForm.controls['mail'].touched, 
